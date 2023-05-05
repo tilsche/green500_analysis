@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "green500-analysis"
+version = "0.1.0"
+description = ""
+authors = ["Thomas Ilsche"]
+readme = "README.md"
+packages = [{include = "green500_analysis"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+jupyter = "^1.0.0"
+pandas = {extras = ["excel"], version = "^2.0.1"}
+seaborn = "^0.12.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
